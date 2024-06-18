@@ -14,9 +14,9 @@ public class ShapesProgram {
         
 
         try {
-            allShapes.removeShape(circle);
+            allShapes.removeShape(circle); // kodikas pou dimiourgei tin anagki gia exception
         } catch (ShapeNotInCollectionException e){
-            System.out.println(e.getMessage());
+            System.out.println(e.getMessage()); // kodikas pou kanoum execute me afto to exception
         }
 
         allShapes.printAllAreas();
